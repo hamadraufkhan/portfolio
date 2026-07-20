@@ -2,11 +2,13 @@
  * Portfolio content (CV-driven). Edit values here to update the entire site.
  */
 
+import { asset } from "../lib/asset";
+
 export const profile = {
   name: "Hamad Rauf Khan",
   role: "Senior Software Architect",
   location: "Islamabad, Pakistan",
-  avatar: "/avatars/hamad.png",
+  avatar: asset("/avatars/hamad.png"),
   email: "hamadraufkhan@gmail.com",
   phone: "+92-332-8876607",
   address: "Islamabad, Pakistan",
@@ -55,7 +57,7 @@ export const heroSlides = [
     subtitle:
       "Senior Software Architect building robust, scalable, and secure enterprise systems",
     cta: { label: "Download CV", href: "#contact" },
-    image: "/backgrounds/hero-architecture.png",
+    image: asset("/backgrounds/hero-architecture.png"),
   },
   {
     id: 2,
@@ -63,7 +65,7 @@ export const heroSlides = [
     subtitle:
       "Windows & web apps, edge/cloud delivery, Fast Channel platforms, and microservices",
     cta: { label: "View Work", href: "#work" },
-    image: "/backgrounds/hero-cloud.png",
+    image: asset("/backgrounds/hero-cloud.png"),
   },
 ] as const;
 
@@ -244,7 +246,7 @@ export const portfolio = {
       tag: "RFID · Biometric",
       description:
         "Built and installed an RFID + biometric access control system for 1-day visa visits across the Kartarpur Corridor border.",
-      image: "/projects/project-kartarpur.png",
+      image: asset("/projects/project-kartarpur.png"),
     },
     {
       id: 1,
@@ -253,8 +255,8 @@ export const portfolio = {
       tag: "AI · Multi-channel",
       description:
         "AI assistant across Web, App, SMS, USSD, and IVR — help without requiring always-on internet.",
-      image: "https://ideationtec.com/public/assets/images/AssistMeAI.webp",
-      video: "/projects/videos/assist-me.mp4",
+      image: asset("/projects/assistme.webp"),
+      video: asset("/projects/videos/assist-me.mp4"),
     },
     {
       id: 2,
@@ -263,8 +265,8 @@ export const portfolio = {
       tag: "Cloud · Storage",
       description:
         "Secure cloud storage and sharing with role-based access and enterprise-grade integrity controls.",
-      image: "https://ideationtec.com/public/assets/images/portall-product.webp",
-      video: "/projects/videos/portall.mp4",
+      image: asset("/projects/portall.webp"),
+      video: asset("/projects/videos/portall.mp4"),
     },
     {
       id: 3,
@@ -273,8 +275,8 @@ export const portfolio = {
       tag: "OTT · Fast Channel",
       description:
         "Digital content platform for films, local shows, and originals — Fast Channel delivery at scale.",
-      image: "https://ideationtec.com/public/assets/images/deikho-product.webp",
-      video: "/projects/videos/deikho.mp4",
+      image: asset("/projects/deikho.webp"),
+      video: asset("/projects/videos/deikho.mp4"),
     },
     {
       id: 4,
@@ -283,9 +285,8 @@ export const portfolio = {
       tag: "Live TV · Streaming",
       description:
         "Video streaming with 40+ live channels plus movies, series, and on-demand Fast Channel content.",
-      image:
-        "https://ideationtec.com/public/assets/images/zongtv-product(1).webp",
-      video: "/projects/videos/zong-tv.mp4",
+      image: asset("/projects/zongtv.webp"),
+      video: asset("/projects/videos/zong-tv.mp4"),
     },
     {
       id: 5,
@@ -294,8 +295,8 @@ export const portfolio = {
       tag: "Lifestyle · OTT",
       description:
         "Original lifestyle programming — fashion, travel, food, and fitness on a Fast Channel stack.",
-      image: "https://ideationtec.com/public/assets/images/whatsin-product.webp",
-      video: "/projects/videos/whatsin.mp4",
+      image: asset("/projects/whatsin.webp"),
+      video: asset("/projects/videos/whatsin.mp4"),
     },
     {
       id: 6,
@@ -304,9 +305,8 @@ export const portfolio = {
       tag: "Web · Gaming",
       description:
         "Browser-based gaming platform — instant play, no downloads, subscription-ready delivery.",
-      image:
-        "https://ideationtec.com/public/assets/images/playland-product.webp",
-      video: "/projects/videos/playland.mp4",
+      image: asset("/projects/playland.webp"),
+      video: asset("/projects/videos/playland.mp4"),
     },
     {
       id: 7,
@@ -315,7 +315,7 @@ export const portfolio = {
       tag: "Platform · Delivery",
       description:
         "Fast Channel infrastructure built for Ideation platforms — low-latency content and channel delivery across OTT products.",
-      image: "/projects/project-fast-channel.png",
+      image: asset("/projects/project-fast-channel.png"),
     },
     {
       id: 8,
@@ -324,7 +324,7 @@ export const portfolio = {
       tag: "Desktop · Enterprise",
       description:
         "National ETTM platform for M-Tags — registration, tolls, reporting, and 99.9% uptime architecture.",
-      image: "/projects/project-etag.png",
+      image: asset("/projects/project-etag.png"),
     },
     {
       id: 9,
@@ -333,7 +333,7 @@ export const portfolio = {
       tag: "Mobile · Play Store",
       description:
         "Commuter app for balances, recharges, travel history, and secure top-ups — as published on Google Play.",
-      image: "/projects/mtag-screen.jpg",
+      image: asset("/projects/mtag-screen.jpg"),
       url: "https://play.google.com/store/apps/details?id=com.ls.onenetwork.mtag&hl=en",
     },
     {
@@ -343,7 +343,7 @@ export const portfolio = {
       tag: "Web · Enterprise",
       description:
         "Web portal for fleet admin, bulk recharge, monitoring, reporting, and role-based account control.",
-      image: "/projects/project-fleet.png",
+      image: asset("/projects/project-fleet.png"),
     },
     {
       id: 11,
@@ -352,7 +352,7 @@ export const portfolio = {
       tag: "APIs · Fintech",
       description:
         "Secure integrations with 1LINK, Mastercard, banks, and wallets — reconciliation and real-time callbacks.",
-      image: "/projects/project-payment.png",
+      image: asset("/projects/project-payment.png"),
     },
     {
       id: 12,
@@ -361,7 +361,7 @@ export const portfolio = {
       tag: "AI · HR Tech",
       description:
         "AI screening, resume analysis, matching, and interview workflows to speed hiring decisions.",
-      image: "/projects/project-merit.png",
+      image: asset("/projects/project-merit.png"),
     },
     {
       id: 13,
@@ -370,7 +370,7 @@ export const portfolio = {
       tag: "Voice AI · NLP",
       description:
         "Voice assistant for complaints — speech recognition, NLP, ticketing, and CRM integration.",
-      image: "/projects/project-callbot.png",
+      image: asset("/projects/project-callbot.png"),
     },
     {
       id: 14,
@@ -379,7 +379,7 @@ export const portfolio = {
       tag: "ATM · Fintech",
       description:
         "Smart bank teller / ATM software bridging cash and regulated banking — hardware, APIs, and compliance-ready flows.",
-      image: "/projects/futura-kiosk.png",
+      image: asset("/projects/futura-kiosk.png"),
       url: "https://futuraatm.com/",
     },
     {
@@ -389,7 +389,7 @@ export const portfolio = {
       tag: "News · Media",
       description:
         "Digital news aggregation platform consolidating publishers into a mobile-friendly reading experience.",
-      image: "/projects/project-news.png",
+      image: asset("/projects/project-news.png"),
       url: "https://mobileakhbaar.com/",
     },
   ],

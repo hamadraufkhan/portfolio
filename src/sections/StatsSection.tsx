@@ -2,6 +2,7 @@ import type { RefObject } from "react";
 import { useInView } from "../hooks/useInView";
 import { useCountUp } from "../hooks/useCountUp";
 import { stats } from "../data/profile";
+import { asset } from "../lib/asset";
 
 function StatItem({
   value,
@@ -29,12 +30,13 @@ function StatItem({
 }
 
 export default function StatsSection() {
+  const bg = asset("/backgrounds/hero-cloud.png");
+
   return (
     <section
       className="section-wrap bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage:
-          "linear-gradient(rgba(232,120,58,0.9), rgba(212,101,40,0.88)), url('/backgrounds/hero-cloud.png')",
+        backgroundImage: `linear-gradient(rgba(232,120,58,0.9), rgba(212,101,40,0.88)), url('${bg}')`,
       }}
     >
       <div className="content-inner">
