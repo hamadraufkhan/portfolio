@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     watch: {
       // Large/binary assets under public/ can lock on Windows and crash the watcher
-      ignored: ["**/public/projects/**"],
+      ignored: ["**/public/**"],
     },
   },
 });

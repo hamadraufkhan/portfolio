@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowUpRight, Play } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
+import SectionSideDecorations from "../components/effects/SectionSideDecorations";
 import { portfolio, type PortfolioCategory } from "../data/profile";
 
 function ProjectMedia({
@@ -112,8 +113,9 @@ export default function PortfolioSection() {
   }, [active]);
 
   return (
-    <section id="work" className="section-wrap bg-sidebar/85 backdrop-blur-[2px]">
-      <div className="content-inner-full">
+    <section id="work" className="section-wrap relative overflow-hidden bg-sidebar/85 backdrop-blur-[2px]">
+      <SectionSideDecorations variant={6} />
+      <div className="content-inner-full relative z-10">
         <SectionHeading
           eyebrow={portfolio.eyebrow}
           heading={portfolio.heading}

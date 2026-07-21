@@ -35,7 +35,7 @@ export default function Sidebar({ activeId, open, onClose }: SidebarProps) {
           <img
             src={profile.avatar}
             alt={profile.name}
-            className="mx-auto mb-6 h-[150px] w-[150px] rounded-full object-cover ring-4 ring-primary/20"
+            className="mx-auto mb-6 h-[130px] w-[130px] rounded-full object-cover object-[center_9%] ring-4 ring-primary/20"
           />
           <h1 className="font-quicksand text-[22px] font-bold text-ink">
             <a href="#home">{profile.name}</a>

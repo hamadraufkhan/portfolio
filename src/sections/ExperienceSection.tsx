@@ -1,10 +1,12 @@
 import SectionHeading from "../components/ui/SectionHeading";
+import SectionSideDecorations from "../components/effects/SectionSideDecorations";
 import { experience } from "../data/profile";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="section-wrap bg-white/80 backdrop-blur-[2px]">
-      <div className="content-inner">
+    <section id="experience" className="section-wrap relative overflow-hidden bg-white/80 backdrop-blur-[2px]">
+      <SectionSideDecorations variant={4} />
+      <div className="content-inner relative z-10">
         <SectionHeading
           eyebrow={experience.eyebrow}
           heading={experience.heading}

@@ -2,6 +2,7 @@
  * Portfolio content (CV-driven). Edit values here to update the entire site.
  */
 
+import heroImage from "../assets/hero-hamad-servers.png";
 import { asset } from "../lib/asset";
 
 export const profile = {
@@ -50,24 +51,20 @@ export const navLinks = [
   { label: "Contact", href: "#contact" },
 ] as const;
 
-export const heroSlides = [
-  {
-    id: 1,
-    title: "Hi! I'm Hamad",
-    subtitle:
-      "Senior Software Architect building robust, scalable, and secure enterprise systems",
-    cta: { label: "Download CV", href: "#contact" },
-    image: asset("/backgrounds/hero-architecture.png"),
+export const hero = {
+  tagline: "Enterprise Software Architect",
+  headline: ["ARCHITECT.", "BUILD.", "SCALE."],
+  subtitle:
+    "I design Windows, web, and cloud platforms that don't just ship —",
+  subtitleEmphasis: "they scale.",
+  image: heroImage,
+  ctaPrimary: { label: "View My Work", href: "#work" },
+  ctaSecondary: { label: "Download CV", href: "#contact" },
+  badge: {
+    title: "10+ Years",
+    subtitle: "Engineering Experience",
   },
-  {
-    id: 2,
-    title: "I design platforms",
-    subtitle:
-      "Windows & web apps, edge/cloud delivery, Fast Channel platforms, and microservices",
-    cta: { label: "View Work", href: "#work" },
-    image: asset("/backgrounds/hero-cloud.png"),
-  },
-] as const;
+};
 
 export const about = {
   eyebrow: "About Me",

@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
+import SectionSideDecorations from "../components/effects/SectionSideDecorations";
 import { contact, profile } from "../data/profile";
 
 const socialIcons = {
@@ -11,8 +12,9 @@ const socialIcons = {
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="section-wrap bg-sidebar/85 backdrop-blur-[2px]">
-      <div className="content-inner">
+    <section id="contact" className="section-wrap relative overflow-hidden bg-sidebar/85 backdrop-blur-[2px]">
+      <SectionSideDecorations variant={5} />
+      <div className="content-inner relative z-10">
         <SectionHeading
           eyebrow={contact.eyebrow}
           heading={contact.heading}

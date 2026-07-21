@@ -5,6 +5,7 @@ import {
   Server,
 } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
+import SectionSideDecorations from "../components/effects/SectionSideDecorations";
 import { about } from "../data/profile";
 
 const iconMap = {
@@ -16,8 +17,9 @@ const iconMap = {
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section-wrap bg-white/80 backdrop-blur-[2px]">
-      <div className="content-inner">
+    <section id="about" className="section-wrap relative overflow-hidden bg-white/80 backdrop-blur-[2px]">
+      <SectionSideDecorations variant={0} />
+      <div className="content-inner relative z-10">
         <SectionHeading eyebrow={about.eyebrow} heading={about.heading} />
 
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">

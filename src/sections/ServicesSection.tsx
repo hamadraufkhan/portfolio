@@ -7,6 +7,7 @@ import {
   Compass,
 } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
+import SectionSideDecorations from "../components/effects/SectionSideDecorations";
 import { services } from "../data/profile";
 
 const iconMap = {
@@ -20,8 +21,9 @@ const iconMap = {
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="section-wrap bg-sidebar/85 backdrop-blur-[2px]">
-      <div className="content-inner">
+    <section id="services" className="section-wrap relative overflow-hidden bg-sidebar/85 backdrop-blur-[2px]">
+      <SectionSideDecorations variant={1} />
+      <div className="content-inner relative z-10">
         <SectionHeading
           eyebrow={services.eyebrow}
           heading={services.heading}
